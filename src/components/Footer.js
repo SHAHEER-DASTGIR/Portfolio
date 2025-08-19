@@ -1,7 +1,9 @@
-export default function Footer({ darkMode }) {
+export default function Footer() {
   return (
-    <footer className={`${darkMode ? "bg-gray-800" : "bg-gray-200"} py-6 text-center text-gray-500`}>
-      © {new Date().getFullYear()} Shaheer Dastgir. All rights reserved.
+    <footer className="pt-10 pb-6 text-center text-xs text-slate-500">
+      <span className="opacity-70">
+        Designed & built by Shaheer Dastgir — inspired by modern developer portfolios.
+      </span>
     </footer>
   );
 }

@@ -1,15 +1,36 @@
-import { motion } from "framer-motion";
+import { Github } from "lucide-react";
 
 export default function ProjectCard({ project }) {
   return (
-    <motion.div 
-      whileHover={{ scale: 1.05 }}
-      className="p-6 bg-gray-900 rounded-xl shadow hover:shadow-blue-500/50 transition"
-    >
-      <img src={project.image} alt={project.title} className="rounded-lg mb-4" />
-      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-      <p className="text-gray-400 mb-3">{project.description}</p>
-      <a href={project.github} className="text-blue-400 underline">View Code</a>
-    </motion.div>
+    <article className="card p-5 flex flex-col gap-3">
+      <img
+        src={project.image}
+        alt={project.title}
+        className="rounded-md border border-slate-700/40"
+      />
+      <h4 className="text-slate-100 font-semibold">{project.title}</h4>
+      <p className="text-sm text-slate-300">{project.description}</p>
+
+      {project.stack?.length ? (
+        <div className="flex flex-wrap gap-2">
+          {project.stack.map((t) => (
+            <span key={t} className="pill">{t}</span>
+          ))}
+        </div>
+      ) : null}
+
+      <div className="mt-1 flex items-center gap-4">
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
+            <Github className="h-4 w-4" /> <span>Code</span>
+          </a>
+        )}
+        {project.demo && (
+          <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
+            <span>Demo →</span>
+          </a>
+        )}
+      </div>
+    </article>
   );
 }
