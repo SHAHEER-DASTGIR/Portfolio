@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a192f; /* deep navy background */
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: #8892b0; /* body text */
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #ccd6f6; /* bright headings */
+}
+
+/* Links */
+a {
+  color: #64ffda;
+  transition: all 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* Section titles with teal underline */
+.section-title {
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #ccd6f6;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 3rem;
+  height: 2px;
+  background-color: #64ffda;
+}
+
+/* Card style */
+.card {
+  border-radius: 0.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  background-color: rgba(2, 12, 27, 0.7);
+  transition: background-color 0.3s;
+}
+.card:hover {
+  background-color: rgba(2, 12, 27, 1);
+}
+
+/* Skill pill style */
+.pill {
+  display: inline-block;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(136, 146, 176, 0.4);
+  background-color: rgba(10, 25, 47, 0.8);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: #8892b0;
+}
