@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://shaheer-dastgir.github.io",
+  "homepage": "https://SHAHEER-DASTGIR.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
