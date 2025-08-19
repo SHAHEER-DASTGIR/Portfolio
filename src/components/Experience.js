@@ -34,8 +34,6 @@ export default function Experience() {
             </div>
             <ul className="mt-3 list-disc pl-5 text-slate-300 space-y-1">
               {r.points.map((p, i) => <li key={i}>{p}</li>)}
-              )
-              }
             </ul>
           </article>
         ))}
