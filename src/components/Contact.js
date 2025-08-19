@@ -5,7 +5,7 @@ export default function Contact() {
       <p className="mb-4">Let’s build something amazing together 🚀</p>
       <p>Email: <a href="mailto:shaheer3313@gmail.com" className="text-blue-400">shaheer3313@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/SHAHEER-DASTGIR" className="text-blue-400">github.com/SHAHEER-DASTGIR</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/shaheer-dastgir-224b72281" className="text-blue-400">linkedin.com/in/shaheer-dastgir-224b72281</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shaheer-dastgir-224b72281" className="text-blue-400">www.linkedin.com/in/shaheer-dastgir-224b72281</a></p>
     </section>
   );
 }
